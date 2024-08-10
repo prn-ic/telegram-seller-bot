@@ -4,13 +4,13 @@ namespace TelegramSellerBot.Core.Entities
 {
     public class TelegramBot : BaseEntity<Guid>
     {
-        public string? Name { get; private set; }
-        public string? Description { get; private set; }
-        public string? TelegramBotLink { get; private set; }
+        public string Name { get; private set; }
+        public string Description { get; private set; }
+        public string TelegramBotLink { get; private set; }
         public ICollection<TelegramBotDurationAvailability> Availabilities { get; private set; } =
             new List<TelegramBotDurationAvailability>();
 
-        public TelegramBot(string? name, string? description, string? telegramBotLink)
+        public TelegramBot(string name, string description, string telegramBotLink)
         {
             ExceptionExtension.ThrowIfStringRangeIsInvalid(name, 3, 100);
             Name = name;
@@ -21,9 +21,9 @@ namespace TelegramSellerBot.Core.Entities
         }
 
         public TelegramBot(
-            string? name,
-            string? description,
-            string? telegramBotLink,
+            string name,
+            string description,
+            string telegramBotLink,
             ICollection<TelegramBotDurationAvailability> availabilities
         )
         {
@@ -36,19 +36,19 @@ namespace TelegramSellerBot.Core.Entities
             Availabilities = availabilities;
         }
 
-        public void SetName(string? name)
+        public void SetName(string name)
         {
             ExceptionExtension.ThrowIfStringRangeIsInvalid(name, 3, 100);
             Name = name;
         }
 
-        public void SetDescription(string? description)
+        public void SetDescription(string description)
         {
             ExceptionExtension.ThrowIfStringRangeIsInvalid(description, 3, 300);
             Description = description;
         }
 
-        public void SetTelegramBotLink(string? telegramBotLink)
+        public void SetTelegramBotLink(string telegramBotLink)
         {
             ExceptionExtension.ThrowIsValueNull(telegramBotLink);
             TelegramBotLink = telegramBotLink;
