@@ -2,7 +2,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Npgsql;
+using TelegramSellerBot.Core.Repositories;
 using TelegramSellerBot.Persistense.Data;
+using TelegramSellerBot.Persistense.Repositories;
 
 namespace TelegramSellerBot.Persistense
 {
@@ -22,6 +24,11 @@ namespace TelegramSellerBot.Persistense
                     b => b.MigrationsAssembly(migrationAssemblyName)
                 );
             });
+
+            services.AddScoped<ISubscriptionHistoryRepository, SubscriptionHistoryRepository>();
+            services.AddScoped<ISubscriptionRepository, SubscriptionRepository>();
+            services.AddScoped<ITelegramBotDurationAvailablilityRepository, TelegramBotDurationAvailabilityRepository>();
+            services.AddScoped<ITelegramBotRepository, TelegramBotRepository>();
 
             return services;
         }
