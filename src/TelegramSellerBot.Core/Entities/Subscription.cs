@@ -16,6 +16,17 @@ namespace TelegramSellerBot.Core.Entities
 
         public TelegramServiceDurations DurationId { get; set; }
 
+        public Subscription(string? telegramUserId, TelegramBot service, TelegramServiceDurations durationId)
+        {
+            ExceptionExtension.ThrowIfStringRangeIsInvalid(telegramUserId, 1);
+            TelegramUserId = telegramUserId;
+            Service = service;
+            ExceptionExtension.ThrowIsValueNull(durationId);
+            DurationId = durationId;
+            ModifiedAt = CreatedAt;
+            StatusId = SubscriptionStatuses.Active;
+        }
+
         public Subscription(
             string? telegramUserId,
             DateTime createdAt,

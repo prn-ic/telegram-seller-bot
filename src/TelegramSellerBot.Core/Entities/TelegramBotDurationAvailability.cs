@@ -14,6 +14,17 @@ namespace TelegramSellerBot.Core.Entities
         public Guid ServiceId { get; set; }
 
         public TelegramBotDurationAvailability(
+            Guid serviceId,
+            TelegramServiceDurations durationId,
+            decimal cost
+        )
+        {
+            DurationId = durationId;
+            ServiceId = serviceId;
+            Cost = cost;
+        }
+
+        public TelegramBotDurationAvailability(
             TelegramBotDuration? duration,
             TelegramBot? service,
             decimal cost,
