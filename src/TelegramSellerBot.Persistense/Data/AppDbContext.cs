@@ -16,6 +16,8 @@ namespace TelegramSellerBot.Persistense.Data
         public virtual DbSet<TelegramBotDurationAvailability> TelegramBotDurationAvailabilities =>
             Set<TelegramBotDurationAvailability>();
 
+        public AppDbContext() { }
+
         public AppDbContext(DbContextOptions options)
             : base(options) { }
 
