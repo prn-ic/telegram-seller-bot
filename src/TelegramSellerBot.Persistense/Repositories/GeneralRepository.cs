@@ -42,20 +42,11 @@ namespace TelegramSellerBot.Persistense.Repositories
             await _context.SaveChangesAsync(cancellationToken);
         }
 
-        public async Task<T> GetAsync(TId id, CancellationToken cancellationToken = default)
+        public async Task<T?> GetAsync(TId id, CancellationToken cancellationToken = default)
         {
-            T? entity = await _context
+            return await _context
                 .Set<T>()
-                .FirstOrDefaultAsync(x => x.Id.Equals(id), cancellationToken);
-
-            if (entity is null)
-            {
-                throw new InvalidRequestException(
-                    string.Format("{0} wasn't found", typeof(T).Name)
-                );
-            }
-
-            return entity;
+                .FirstOrDefaultAsync(x => x.Id.Equals(id), cancellationToken);;
         }
 
         public async Task<IEnumerable<T>> GetAsync(CancellationToken cancellationToken = default)
