@@ -1,26 +1,21 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F5FBBDC8-D458-4E9C-9340-B56955186215}"
-	ProjectSection(SolutionItems) = preProject
-		src\TelegramSellerBot.TelegramBot\TelegramSellerBot.TelegramBot.csproj = src\TelegramSellerBot.TelegramBot\TelegramSellerBot.TelegramBot.csproj
-	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelegramSellerBot.Application", "src\TelegramSellerBot.Application\TelegramSellerBot.Application.csproj", "{4F1E9110-00C3-4CFE-9797-56E036A7B483}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TelegramSellerBot.Application", "src\TelegramSellerBot.Application\TelegramSellerBot.Application.csproj", "{4F1E9110-00C3-4CFE-9797-56E036A7B483}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelegramSellerBot.Core", "src\TelegramSellerBot.Core\TelegramSellerBot.Core.csproj", "{702B418A-2FE2-4551-B8D5-A621BE0569A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TelegramSellerBot.Core", "src\TelegramSellerBot.Core\TelegramSellerBot.Core.csproj", "{702B418A-2FE2-4551-B8D5-A621BE0569A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelegramSellerBot.Persistense", "src\TelegramSellerBot.Persistense\TelegramSellerBot.Persistense.csproj", "{36061937-55D4-4F9A-8877-5669546647C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TelegramSellerBot.Persistense", "src\TelegramSellerBot.Persistense\TelegramSellerBot.Persistense.csproj", "{36061937-55D4-4F9A-8877-5669546647C0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TelegramSellerBot.TelegramBot", "src\TelegramSellerBot.TelegramBot\TelegramSellerBot.TelegramBot.csproj", "{0C155EAE-120B-4A02-8D70-A0C71533D309}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{4F1E9110-00C3-4CFE-9797-56E036A7B483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -35,10 +30,21 @@ Global
 		{36061937-55D4-4F9A-8877-5669546647C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36061937-55D4-4F9A-8877-5669546647C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36061937-55D4-4F9A-8877-5669546647C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C155EAE-120B-4A02-8D70-A0C71533D309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C155EAE-120B-4A02-8D70-A0C71533D309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C155EAE-120B-4A02-8D70-A0C71533D309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C155EAE-120B-4A02-8D70-A0C71533D309}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4F1E9110-00C3-4CFE-9797-56E036A7B483} = {F5FBBDC8-D458-4E9C-9340-B56955186215}
 		{702B418A-2FE2-4551-B8D5-A621BE0569A0} = {F5FBBDC8-D458-4E9C-9340-B56955186215}
 		{36061937-55D4-4F9A-8877-5669546647C0} = {F5FBBDC8-D458-4E9C-9340-B56955186215}
+		{0C155EAE-120B-4A02-8D70-A0C71533D309} = {F5FBBDC8-D458-4E9C-9340-B56955186215}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BCDB5A1-DD71-4AA8-A079-FD73C3FD3633}
 	EndGlobalSection
 EndGlobal
