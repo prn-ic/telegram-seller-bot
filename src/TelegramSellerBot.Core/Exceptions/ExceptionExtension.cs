@@ -32,7 +32,7 @@
         {
             if (value < 0)
             {
-                throw new InvalidRequestException("The value must be greater than zero");
+                throw new InvalidCostException("The value must be greater than zero");
             }
         }
     }

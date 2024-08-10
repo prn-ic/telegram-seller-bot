@@ -1,5 +1,4 @@
 ﻿using TelegramSellerBot.Core.Dtos;
-using TelegramSellerBot.Core.Entities;
 
 namespace TelegramSellerBot.Core.Contracts
 {

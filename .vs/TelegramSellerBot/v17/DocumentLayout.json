@@ -106,8 +106,7 @@
               "RelativeToolTip": "tests\\TelegramSellerBot.Core.UnitTests\\Seeds\\SubscriptionSeedGenerator.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T14:23:49.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T14:23:49.524Z"
             },
             {
               "$type": "Document",
@@ -119,8 +118,7 @@
               "RelativeToolTip": "src\\TelegramSellerBot.Core\\Entities\\Subscription.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAAYwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T14:11:45.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T14:11:45.295Z"
             },
             {
               "$type": "Document",
@@ -132,8 +130,7 @@
               "RelativeToolTip": "src\\TelegramSellerBot.Core\\Entities\\TelegramBotDuration.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T09:55:42.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T09:55:42.366Z"
             },
             {
               "$type": "Document",
@@ -145,8 +142,7 @@
               "RelativeToolTip": "tests\\TelegramSellerBot.Core.UnitTests\\SubscriptionTests.cs",
               "ViewState": "AQIAAIMAAAAAAAAAAAAIwKkAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T13:59:33.05Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T13:59:33.05Z"
             },
             {
               "$type": "Document",
@@ -158,8 +154,7 @@
               "RelativeToolTip": "src\\TelegramSellerBot.Core\\Entities\\SubscriptionHistory.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T09:55:52.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T09:55:52.165Z"
             },
             {
               "$type": "Document",
@@ -171,8 +166,7 @@
               "RelativeToolTip": "src\\TelegramSellerBot.Core\\Entities\\SubscriptionStatus.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T09:55:39.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T09:55:39.04Z"
             },
             {
               "$type": "Document",
@@ -197,8 +191,7 @@
               "RelativeToolTip": "src\\TelegramSellerBot.Core\\Entities\\TelegramBot.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T09:55:40.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T09:55:40.426Z"
             },
             {
               "$type": "Document",
@@ -210,8 +203,7 @@
               "RelativeToolTip": "src\\TelegramSellerBot.Core\\Common\\TelegramServiceDurations.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T15:16:58.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T15:16:58.114Z"
             },
             {
               "$type": "Document",
@@ -223,8 +215,7 @@
               "RelativeToolTip": "src\\TelegramSellerBot.Core\\Exceptions\\ExceptionExtension.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAgwBkAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T14:17:12.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T14:17:12.403Z"
             },
             {
               "$type": "Document",
@@ -236,8 +227,7 @@
               "RelativeToolTip": "src\\TelegramSellerBot.Core\\Entities\\BaseEntity.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T09:55:48.759Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T09:55:48.759Z"
             },
             {
               "$type": "Document",
@@ -249,8 +239,7 @@
               "RelativeToolTip": "src\\TelegramSellerBot.Core\\Exceptions\\SubscriptionExistsException.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T10:05:22.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T10:05:22.036Z"
             },
             {
               "$type": "Document",
@@ -262,8 +251,7 @@
               "RelativeToolTip": "src\\TelegramSellerBot.Core\\Exceptions\\SubscriptionStatusException.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T10:05:22.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T10:05:22.554Z"
             },
             {
               "$type": "Document",
@@ -287,8 +275,7 @@
               "RelativeToolTip": "src\\TelegramSellerBot.Core\\Exceptions\\InvalidCostException.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T10:03:44.48Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-10T10:03:44.48Z"
             },
             {
               "$type": "Document",
