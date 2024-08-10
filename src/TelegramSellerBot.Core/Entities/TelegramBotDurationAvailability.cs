@@ -1,5 +1,3 @@
-using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
 using TelegramSellerBot.Core.Common;
 using TelegramSellerBot.Core.Exceptions;
 
@@ -9,13 +7,32 @@ namespace TelegramSellerBot.Core.Entities
     {
         public TelegramBotDuration? Duration { get; set; }
         public TelegramBot? Service { get; set; }
-        [Required(ErrorMessageResourceType = typeof(InvalidRequestException))]
-        public decimal Cost { get; set; }
+        public decimal Cost { get; private set; }
 
-        [Required(ErrorMessageResourceType = typeof(InvalidRequestException))]
         public TelegramServiceDurations DurationId { get; set; }
 
-        [Required(ErrorMessageResourceType = typeof(InvalidRequestException))]
         public Guid ServiceId { get; set; }
+
+        public TelegramBotDurationAvailability(
+            TelegramBotDuration? duration,
+            TelegramBot? service,
+            decimal cost,
+            TelegramServiceDurations durationId,
+            Guid serviceId
+        )
+        {
+            Duration = duration;
+            Service = service;
+            ExceptionExtension.ThrowIfLessThanZero(cost);
+            Cost = cost;
+            DurationId = durationId;
+            ServiceId = serviceId;
+        }
+
+        public void SetCost(decimal cost)
+        {
+            ExceptionExtension.ThrowIfLessThanZero(cost);
+            Cost = cost;
+        }
     }
 }

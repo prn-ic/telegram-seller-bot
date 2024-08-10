@@ -3,12 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\exceptions\\invalidcostexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\exceptions\\invalidcostexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\entities\\telegrambotdurationavailability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\entities\\telegrambotdurationavailability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\entities\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\entities\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\entities\\subscriptionhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\entities\\subscriptionhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\entities\\subscriptionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\entities\\subscriptionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\entities\\telegrambot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\entities\\telegrambot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\entities\\telegrambotduration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\entities\\telegrambotduration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7414F68-DC2B-4F45-B927-9DF152304864}|tests\\TelegramSellerBot.Core.UnitTests\\TelegramSellerBot.Core.UnitTests.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\tests\\telegramsellerbot.core.unittests\\subscriptiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7414F68-DC2B-4F45-B927-9DF152304864}|tests\\TelegramSellerBot.Core.UnitTests\\TelegramSellerBot.Core.UnitTests.csproj|solutionrelative:tests\\telegramsellerbot.core.unittests\\subscriptiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7414F68-DC2B-4F45-B927-9DF152304864}|tests\\TelegramSellerBot.Core.UnitTests\\TelegramSellerBot.Core.UnitTests.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\tests\\telegramsellerbot.core.unittests\\seeds\\subscriptionseedgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7414F68-DC2B-4F45-B927-9DF152304864}|tests\\TelegramSellerBot.Core.UnitTests\\TelegramSellerBot.Core.UnitTests.csproj|solutionrelative:tests\\telegramsellerbot.core.unittests\\seeds\\subscriptionseedgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\common\\telegramservicedurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\common\\telegramservicedurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\exceptions\\exceptionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\exceptions\\exceptionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\exceptions\\subscriptionexistsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\exceptions\\subscriptionexistsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\exceptions\\subscriptionstatusexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\exceptions\\subscriptionstatusexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\exceptions\\invalidcostexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\exceptions\\invalidcostexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\requests\\updatesubscriptionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,40 +71,8 @@
       "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\requests\\createsubscriptionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\exceptions\\subscriptionstatusexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\exceptions\\subscriptionstatusexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\exceptions\\subscriptionexistsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\exceptions\\subscriptionexistsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\exceptions\\invalidrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\exceptions\\invalidrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\entities\\telegrambotdurationavailability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\entities\\telegrambotdurationavailability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\entities\\telegrambotduration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\entities\\telegrambotduration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\entities\\telegrambot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\entities\\telegrambot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\entities\\subscriptionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\entities\\subscriptionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\entities\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\entities\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|solutionrelative:src\\telegramsellerbot.core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{702B418A-2FE2-4551-B8D5-A621BE0569A0}|src\\TelegramSellerBot.Core\\TelegramSellerBot.Core.csproj|c:\\users\\zmqpkyf\\documents\\github\\telegram-seller-bots\\src\\telegramsellerbot.core\\contracts\\itelegrambotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,84 +94,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UpdateSubscriptionRequest.cs",
-              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Requests\\UpdateSubscriptionRequest.cs",
-              "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Requests\\UpdateSubscriptionRequest.cs",
-              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Requests\\UpdateSubscriptionRequest.cs",
-              "RelativeToolTip": "src\\TelegramSellerBot.Core\\Requests\\UpdateSubscriptionRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "DocumentIndex": 7,
+              "Title": "SubscriptionSeedGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\tests\\TelegramSellerBot.Core.UnitTests\\Seeds\\SubscriptionSeedGenerator.cs",
+              "RelativeDocumentMoniker": "tests\\TelegramSellerBot.Core.UnitTests\\Seeds\\SubscriptionSeedGenerator.cs",
+              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\tests\\TelegramSellerBot.Core.UnitTests\\Seeds\\SubscriptionSeedGenerator.cs",
+              "RelativeToolTip": "tests\\TelegramSellerBot.Core.UnitTests\\Seeds\\SubscriptionSeedGenerator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T10:05:24.3Z",
+              "WhenOpened": "2024-08-10T14:23:49.524Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SubscriptionStatusException.cs",
-              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Exceptions\\SubscriptionStatusException.cs",
-              "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Exceptions\\SubscriptionStatusException.cs",
-              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Exceptions\\SubscriptionStatusException.cs",
-              "RelativeToolTip": "src\\TelegramSellerBot.Core\\Exceptions\\SubscriptionStatusException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T10:05:22.554Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SubscriptionExistsException.cs",
-              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Exceptions\\SubscriptionExistsException.cs",
-              "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Exceptions\\SubscriptionExistsException.cs",
-              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Exceptions\\SubscriptionExistsException.cs",
-              "RelativeToolTip": "src\\TelegramSellerBot.Core\\Exceptions\\SubscriptionExistsException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T10:05:22.036Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "InvalidRequestException.cs",
-              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Exceptions\\InvalidRequestException.cs",
-              "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Exceptions\\InvalidRequestException.cs",
-              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Exceptions\\InvalidRequestException.cs",
-              "RelativeToolTip": "src\\TelegramSellerBot.Core\\Exceptions\\InvalidRequestException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T10:05:21.5Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Entities\\BaseEntity.cs",
-              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\BaseEntity.cs",
-              "RelativeToolTip": "src\\TelegramSellerBot.Core\\Entities\\BaseEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T09:55:48.759Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 1,
               "Title": "Subscription.cs",
               "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\Subscription.cs",
               "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Entities\\Subscription.cs",
               "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\Subscription.cs",
               "RelativeToolTip": "src\\TelegramSellerBot.Core\\Entities\\Subscription.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAYwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T09:55:46.355Z"
+              "WhenOpened": "2024-08-10T14:11:45.295Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "TelegramBotDuration.cs",
+              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\TelegramBotDuration.cs",
+              "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Entities\\TelegramBotDuration.cs",
+              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\TelegramBotDuration.cs",
+              "RelativeToolTip": "src\\TelegramSellerBot.Core\\Entities\\TelegramBotDuration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T09:55:42.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SubscriptionTests.cs",
+              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\tests\\TelegramSellerBot.Core.UnitTests\\SubscriptionTests.cs",
+              "RelativeDocumentMoniker": "tests\\TelegramSellerBot.Core.UnitTests\\SubscriptionTests.cs",
+              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\tests\\TelegramSellerBot.Core.UnitTests\\SubscriptionTests.cs",
+              "RelativeToolTip": "tests\\TelegramSellerBot.Core.UnitTests\\SubscriptionTests.cs",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAIwKkAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T13:59:33.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SubscriptionHistory.cs",
               "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\SubscriptionHistory.cs",
               "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Entities\\SubscriptionHistory.cs",
@@ -168,7 +163,123 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SubscriptionStatus.cs",
+              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\SubscriptionStatus.cs",
+              "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Entities\\SubscriptionStatus.cs",
+              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\SubscriptionStatus.cs",
+              "RelativeToolTip": "src\\TelegramSellerBot.Core\\Entities\\SubscriptionStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T09:55:39.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TelegramBotDurationAvailability.cs",
+              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\TelegramBotDurationAvailability.cs",
+              "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Entities\\TelegramBotDurationAvailability.cs",
+              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\TelegramBotDurationAvailability.cs",
+              "RelativeToolTip": "src\\TelegramSellerBot.Core\\Entities\\TelegramBotDurationAvailability.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T09:57:34.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TelegramBot.cs",
+              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\TelegramBot.cs",
+              "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Entities\\TelegramBot.cs",
+              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\TelegramBot.cs",
+              "RelativeToolTip": "src\\TelegramSellerBot.Core\\Entities\\TelegramBot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T09:55:40.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TelegramServiceDurations.cs",
+              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Common\\TelegramServiceDurations.cs",
+              "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Common\\TelegramServiceDurations.cs",
+              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Common\\TelegramServiceDurations.cs",
+              "RelativeToolTip": "src\\TelegramSellerBot.Core\\Common\\TelegramServiceDurations.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T15:16:58.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ExceptionExtension.cs",
+              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Exceptions\\ExceptionExtension.cs",
+              "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Exceptions\\ExceptionExtension.cs",
+              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Exceptions\\ExceptionExtension.cs",
+              "RelativeToolTip": "src\\TelegramSellerBot.Core\\Exceptions\\ExceptionExtension.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAgwBkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T14:17:12.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Entities\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\BaseEntity.cs",
+              "RelativeToolTip": "src\\TelegramSellerBot.Core\\Entities\\BaseEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T09:55:48.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SubscriptionExistsException.cs",
+              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Exceptions\\SubscriptionExistsException.cs",
+              "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Exceptions\\SubscriptionExistsException.cs",
+              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Exceptions\\SubscriptionExistsException.cs",
+              "RelativeToolTip": "src\\TelegramSellerBot.Core\\Exceptions\\SubscriptionExistsException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T10:05:22.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SubscriptionStatusException.cs",
+              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Exceptions\\SubscriptionStatusException.cs",
+              "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Exceptions\\SubscriptionStatusException.cs",
+              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Exceptions\\SubscriptionStatusException.cs",
+              "RelativeToolTip": "src\\TelegramSellerBot.Core\\Exceptions\\SubscriptionStatusException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T10:05:22.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "InvalidRequestException.cs",
+              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Exceptions\\InvalidRequestException.cs",
+              "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Exceptions\\InvalidRequestException.cs",
+              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Exceptions\\InvalidRequestException.cs",
+              "RelativeToolTip": "src\\TelegramSellerBot.Core\\Exceptions\\InvalidRequestException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T10:05:21.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "InvalidCostException.cs",
               "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Exceptions\\InvalidCostException.cs",
               "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Exceptions\\InvalidCostException.cs",
@@ -181,7 +292,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
+              "Title": "UpdateSubscriptionRequest.cs",
+              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Requests\\UpdateSubscriptionRequest.cs",
+              "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Requests\\UpdateSubscriptionRequest.cs",
+              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Requests\\UpdateSubscriptionRequest.cs",
+              "RelativeToolTip": "src\\TelegramSellerBot.Core\\Requests\\UpdateSubscriptionRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T10:05:24.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "CreateSubscriptionRequest.cs",
               "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Requests\\CreateSubscriptionRequest.cs",
               "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Requests\\CreateSubscriptionRequest.cs",
@@ -193,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 15,
               "Title": "CreateTelegramBotDurationAvailabilityRequest.cs",
               "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Requests\\CreateTelegramBotDurationAvailabilityRequest.cs",
               "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Requests\\CreateTelegramBotDurationAvailabilityRequest.cs",
@@ -205,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "ITelegramBotService.cs",
               "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Contracts\\ITelegramBotService.cs",
               "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Contracts\\ITelegramBotService.cs",
@@ -217,55 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SubscriptionStatus.cs",
-              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\SubscriptionStatus.cs",
-              "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Entities\\SubscriptionStatus.cs",
-              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\SubscriptionStatus.cs",
-              "RelativeToolTip": "src\\TelegramSellerBot.Core\\Entities\\SubscriptionStatus.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T09:55:39.04Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TelegramBot.cs",
-              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\TelegramBot.cs",
-              "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Entities\\TelegramBot.cs",
-              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\TelegramBot.cs",
-              "RelativeToolTip": "src\\TelegramSellerBot.Core\\Entities\\TelegramBot.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T09:55:40.426Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TelegramBotDuration.cs",
-              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\TelegramBotDuration.cs",
-              "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Entities\\TelegramBotDuration.cs",
-              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\TelegramBotDuration.cs",
-              "RelativeToolTip": "src\\TelegramSellerBot.Core\\Entities\\TelegramBotDuration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T09:55:42.366Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TelegramBotDurationAvailability.cs",
-              "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\TelegramBotDurationAvailability.cs",
-              "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Entities\\TelegramBotDurationAvailability.cs",
-              "ToolTip": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Entities\\TelegramBotDurationAvailability.cs",
-              "RelativeToolTip": "src\\TelegramSellerBot.Core\\Entities\\TelegramBotDurationAvailability.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T09:57:34.058Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "ITelegramBotDurationAvailabilityService.cs",
               "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Contracts\\ITelegramBotDurationAvailabilityService.cs",
               "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Contracts\\ITelegramBotDurationAvailabilityService.cs",
@@ -277,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "ISubscriptionService.cs",
               "DocumentMoniker": "C:\\Users\\zmqpkyf\\Documents\\github\\telegram-seller-bots\\src\\TelegramSellerBot.Core\\Contracts\\ISubscriptionService.cs",
               "RelativeDocumentMoniker": "src\\TelegramSellerBot.Core\\Contracts\\ISubscriptionService.cs",

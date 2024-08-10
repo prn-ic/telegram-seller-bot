@@ -1,5 +1,3 @@
-using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
 using TelegramSellerBot.Core.Common;
 using TelegramSellerBot.Core.Exceptions;
 
@@ -7,19 +5,40 @@ namespace TelegramSellerBot.Core.Entities
 {
     public class Subscription : BaseEntity<Guid>
     {
-        [Required(ErrorMessageResourceType = typeof(InvalidRequestException))]
-        public string? TelegramUserId { get; set; }
+        public string? TelegramUserId { get; private set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime? ModifiedAt { get; set; }
         public TelegramBot? Service { get; set; }
         public TelegramBotDuration? Duration { get; set; }
         public SubscriptionStatus? Status { get; set; }
 
-        [Required(ErrorMessageResourceType = typeof(InvalidRequestException))]
         public SubscriptionStatuses StatusId { get; set; }
-        
-        [Required(ErrorMessageResourceType = typeof(InvalidRequestException))]
+
         public TelegramServiceDurations DurationId { get; set; }
+
+        public Subscription(
+            string? telegramUserId,
+            DateTime createdAt,
+            DateTime? modifiedAt,
+            TelegramBot? service,
+            TelegramBotDuration? duration,
+            SubscriptionStatus? status,
+            SubscriptionStatuses statusId,
+            TelegramServiceDurations durationId
+        )
+        {
+            ExceptionExtension.ThrowIfStringRangeIsInvalid(telegramUserId, 1);
+            TelegramUserId = telegramUserId;
+            CreatedAt = createdAt;
+            ModifiedAt = modifiedAt;
+            Service = service;
+            Duration = duration;
+            Status = status;
+            ExceptionExtension.ThrowIsValueNull(statusId);
+            StatusId = statusId;
+            ExceptionExtension.ThrowIsValueNull(durationId);
+            DurationId = durationId;
+        }
 
         public DateTime GetExpirationDate()
         {
@@ -27,6 +46,12 @@ namespace TelegramSellerBot.Core.Entities
                 ModifiedAt = CreatedAt;
 
             return ModifiedAt.Value.AddHours((int)DurationId);
+        }
+
+        public void SetTelegramUserId(string? value)
+        {
+            ExceptionExtension.ThrowIfStringRangeIsInvalid(value, 1);
+            TelegramUserId = value;
         }
 
         public int GetRemainingDays() => (GetExpirationDate() - CreatedAt).Days;

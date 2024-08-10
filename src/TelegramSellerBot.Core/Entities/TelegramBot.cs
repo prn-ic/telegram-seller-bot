@@ -1,20 +1,57 @@
-using System.ComponentModel.DataAnnotations;
 using TelegramSellerBot.Core.Exceptions;
 
 namespace TelegramSellerBot.Core.Entities
 {
     public class TelegramBot : BaseEntity<Guid>
     {
-        [Required(ErrorMessageResourceType = typeof(InvalidRequestException))]
-        [MinLength(3, ErrorMessageResourceType = typeof(InvalidRequestException))]
-        [MaxLength(100, ErrorMessageResourceType = typeof(InvalidRequestException))]
-        public string? Name { get; set; }
-        [Required(ErrorMessageResourceType = typeof(InvalidRequestException))]
-        [MaxLength(300, ErrorMessageResourceType = typeof(InvalidRequestException))]
-        public string? Description { get; set; } = "No Description provided";
-        [Required(ErrorMessageResourceType = typeof(InvalidRequestException))]
-        public string? TelegramBotLink { get; set; }
-        public ICollection<TelegramBotDurationAvailability> Availabilities { get; set; } 
-            = new List<TelegramBotDurationAvailability>();
+        public string? Name { get; private set; }
+        public string? Description { get; private set; }
+        public string? TelegramBotLink { get; private set; }
+        public ICollection<TelegramBotDurationAvailability> Availabilities { get; private set; } =
+            new List<TelegramBotDurationAvailability>();
+
+        public TelegramBot(string? name, string? description, string? telegramBotLink)
+        {
+            ExceptionExtension.ThrowIfStringRangeIsInvalid(name, 3, 100);
+            Name = name;
+            ExceptionExtension.ThrowIfStringRangeIsInvalid(description, 3, 300);
+            Description = description;
+            ExceptionExtension.ThrowIsValueNull(telegramBotLink);
+            TelegramBotLink = telegramBotLink;
+        }
+
+        public TelegramBot(
+            string? name,
+            string? description,
+            string? telegramBotLink,
+            ICollection<TelegramBotDurationAvailability> availabilities
+        )
+        {
+            ExceptionExtension.ThrowIfStringRangeIsInvalid(name, 3, 100);
+            Name = name;
+            ExceptionExtension.ThrowIfStringRangeIsInvalid(description, 3, 300);
+            Description = description;
+            ExceptionExtension.ThrowIsValueNull(telegramBotLink);
+            TelegramBotLink = telegramBotLink;
+            Availabilities = availabilities;
+        }
+
+        public void SetName(string? name)
+        {
+            ExceptionExtension.ThrowIfStringRangeIsInvalid(name, 3, 100);
+            Name = name;
+        }
+
+        public void SetDescription(string? description)
+        {
+            ExceptionExtension.ThrowIfStringRangeIsInvalid(description, 3, 300);
+            Description = description;
+        }
+
+        public void SetTelegramBotLink(string? telegramBotLink)
+        {
+            ExceptionExtension.ThrowIsValueNull(telegramBotLink);
+            TelegramBotLink = telegramBotLink;
+        }
     }
 }
