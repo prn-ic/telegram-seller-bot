@@ -1,6 +1,6 @@
 namespace TelegramSellerBot.Core.Dtos
 {
-    public class TelegramBotDurationAvailability
+    public class TelegramBotDurationAvailabilityDto
     {
         public int Id { get; set; }
         public TelegramBotDurationDto? Duration { get; set; }

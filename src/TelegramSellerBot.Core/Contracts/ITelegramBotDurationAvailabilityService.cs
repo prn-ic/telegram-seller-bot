@@ -1,11 +1,12 @@
-﻿using TelegramSellerBot.Core.Entities;
+﻿using TelegramSellerBot.Core.Dtos;
+using TelegramSellerBot.Core.Entities;
 using TelegramSellerBot.Core.Requests;
 
 namespace TelegramSellerBot.Core.Contracts
 {
     public interface ITelegramBotDurationAvailabilityService
     {
-        Task<TelegramBotDurationAvailability> AddAsync(
+        Task<TelegramBotDurationAvailabilityDto> AddAsync(
             CreateTelegramBotDurationAvailabilityRequest request,
             CancellationToken cancellationToken = default);
 

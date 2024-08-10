@@ -1,10 +1,11 @@
-﻿using TelegramSellerBot.Core.Entities;
+﻿using TelegramSellerBot.Core.Dtos;
+using TelegramSellerBot.Core.Entities;
 
 namespace TelegramSellerBot.Core.Contracts
 {
     public interface ITelegramBotService
     {
-        Task<TelegramBot> GetAsync(Guid id, CancellationToken cancellationToken = default);
-        Task<IEnumerable<TelegramBot>> GetAsync(CancellationToken cancellationToken = default);
+        Task<TelegramBotDto> GetAsync(Guid id, CancellationToken cancellationToken = default);
+        Task<IEnumerable<TelegramBotDto>> GetAsync(CancellationToken cancellationToken = default);
     }
 }
