@@ -16,7 +16,7 @@ namespace TelegramSellerBot.Core.Entities
             Name = name;
             ExceptionExtension.ThrowIfStringRangeIsInvalid(description, 3, 300);
             Description = description;
-            ExceptionExtension.ThrowIsValueNull(telegramBotLink);
+            ExceptionExtension.ThrowIsNullOrEmpty(telegramBotLink);
             TelegramBotLink = telegramBotLink;
         }
 
@@ -31,7 +31,7 @@ namespace TelegramSellerBot.Core.Entities
             Name = name;
             ExceptionExtension.ThrowIfStringRangeIsInvalid(description, 3, 300);
             Description = description;
-            ExceptionExtension.ThrowIsValueNull(telegramBotLink);
+            ExceptionExtension.ThrowIsNullOrEmpty(telegramBotLink);
             TelegramBotLink = telegramBotLink;
             Availabilities = availabilities;
         }
@@ -50,7 +50,7 @@ namespace TelegramSellerBot.Core.Entities
 
         public void SetTelegramBotLink(string telegramBotLink)
         {
-            ExceptionExtension.ThrowIsValueNull(telegramBotLink);
+            ExceptionExtension.ThrowIsNullOrEmpty(telegramBotLink);
             TelegramBotLink = telegramBotLink;
         }
     }

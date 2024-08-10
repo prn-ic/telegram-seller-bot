@@ -28,6 +28,14 @@
             }
         }
 
+        public static void ThrowIsNullOrEmpty(this string? value)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                throw new InvalidRequestException("The field is required");
+            }
+        }
+
         public static void ThrowIfLessThanZero(this decimal value)
         {
             if (value < 0)
