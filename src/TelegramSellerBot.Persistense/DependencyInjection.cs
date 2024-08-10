@@ -10,15 +10,16 @@ namespace TelegramSellerBot.Persistense
     {
         public static IServiceCollection AddNpgsqlPersistense(
             this IServiceCollection services,
-            IConfiguration configuration
+            IConfiguration configuration,
+            string migrationAssemblyName
         )
         {
             services.AddDbContext<AppDbContext>(o =>
             {
                 o.UseSnakeCaseNamingConvention();
                 o.UseNpgsql(
-                    configuration.GetConnectionString("Identity"),
-                    b => b.MigrationsAssembly("Identity.WebApi")
+                    configuration.GetConnectionString("TelegramIdentity"),
+                    b => b.MigrationsAssembly(migrationAssemblyName)
                 );
             });
 
