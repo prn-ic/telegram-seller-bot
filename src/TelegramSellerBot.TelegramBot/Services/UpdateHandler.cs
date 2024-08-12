@@ -17,18 +17,21 @@ namespace TelegramSellerBot.TelegramBot.Services
         private readonly ITelegramBotClient _bot;
         private readonly ITelegramBotService _telegramBotService;
         private readonly IServiceProvider _serviceProvider;
+        private readonly ISubscriptionService _subscriptionService;
 
         public UpdateHandler(
             ITelegramBotClient bot,
             ILogger<UpdateHandler> logger,
             ITelegramBotService telegramBotService,
-            IServiceProvider serviceProvider
+            IServiceProvider serviceProvider,
+            ISubscriptionService subscriptionService
         )
         {
             _bot = bot;
             _logger = logger;
             _telegramBotService = telegramBotService;
             _serviceProvider = serviceProvider;
+            _subscriptionService = subscriptionService;
         }
 
         public async Task HandleUpdateAsync(
@@ -40,16 +43,14 @@ namespace TelegramSellerBot.TelegramBot.Services
             cancellationToken.ThrowIfCancellationRequested();
 
             if (update.Type == UpdateType.Message)
-                await OnMessage(update.Message, cancellationToken);
+                await OnMessage(update.Message!, cancellationToken);
 
             if (update.Type == UpdateType.CallbackQuery)
-                await OnCallbackQuery(update.CallbackQuery);
+                await OnCallbackQuery(update.CallbackQuery!);
         }
 
         private async Task OnMessage(Message message, CancellationToken cancellationToken = default)
         {
-            Message receivedMessage;
-
             switch (message.Text)
             {
                 case "/start":
@@ -58,10 +59,37 @@ namespace TelegramSellerBot.TelegramBot.Services
                 case "💼 Сервисы 💼":
                     await GetAllServices(message, cancellationToken: cancellationToken);
                     break;
+                case "👤 Личный кабинет 👤":
+                    await GetMy(message, cancellationToken: cancellationToken);
+                    break;
                 default:
                     await GetHelp(message, cancellationToken);
                     break;
             }
+        }
+
+        public async Task<Message> GetMy(
+            Message message,
+            CancellationToken cancellationToken = default
+        )
+        {
+            const string lk = "Личный кабинет";
+
+            var subscriptions = await _subscriptionService.GetAsync(
+                message.From!.Id.ToString(),
+                cancellationToken
+            );
+            InlineKeyboardMarkup markup = new InlineKeyboardMarkup().GenerateMySubscriptionsMenu(
+                subscriptions,
+                typeof(ManageBotQuery)
+            );
+
+            return await _bot.SendTextMessageAsync(
+                message.Chat,
+                lk,
+                parseMode: ParseMode.Html,
+                replyMarkup: markup
+            );
         }
 
         public async Task<Message> GetHelp(Message message, CancellationToken cancellationToken)
@@ -152,6 +180,11 @@ namespace TelegramSellerBot.TelegramBot.Services
                 );
 
             await updateHandler.Process(callbackQuery);
+            await _bot.AnswerCallbackQueryAsync(callbackQuery.Id, $"Received {callbackQuery.Data}");
+            await _bot.SendTextMessageAsync(
+                callbackQuery.Message!.Chat,
+                $"Received {callbackQuery.Data}"
+            );
         }
 
         public Task HandleErrorAsync(

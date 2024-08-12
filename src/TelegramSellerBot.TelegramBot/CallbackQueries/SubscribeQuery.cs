@@ -24,11 +24,11 @@ namespace TelegramSellerBot.TelegramBot.CallbackQueries
 
         public async Task<Message> Process(CallbackQuery callbackQuery)
         {
-            Guid botId = Guid.Parse(callbackQuery.Data.Split("_")[1].Split("=")[1]);
+            Guid botId = Guid.Parse(callbackQuery.Data!.Split("_")[1].Split("=")[1]);
             var availabilities = await _durationAvailabilityService.GetAsync(botId);
             var markup = new InlineKeyboardMarkup().GenerateBotDurationAvailabilities(
                 availabilities,
-                typeof(AddSubQuery)
+                typeof(AddSubQuery) 
             );
 
             return await _bot.SendTextMessageAsync(

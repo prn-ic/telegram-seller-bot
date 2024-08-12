@@ -5,18 +5,17 @@ using Telegram.Bot.Types.ReplyMarkups;
 using TelegramSellerBot.Core.Common;
 using TelegramSellerBot.Core.Contracts;
 using TelegramSellerBot.Core.Dtos;
-using TelegramSellerBot.Core.Entities;
 using TelegramSellerBot.TelegramBot.Contracts;
 using TelegramSellerBot.TelegramBot.Services;
 
 namespace TelegramSellerBot.TelegramBot.CallbackQueries
 {
-    public class ManageBotQuery : ICallbackQueryProcessorContract
+    public class StopSubQuery : ICallbackQueryProcessorContract
     {
         private readonly ISubscriptionService _subscriptionService;
         private readonly ITelegramBotClient _bot;
 
-        public ManageBotQuery(ISubscriptionService subscriptionService, ITelegramBotClient bot)
+        public StopSubQuery(ISubscriptionService subscriptionService, ITelegramBotClient bot)
         {
             _subscriptionService = subscriptionService;
             _bot = bot;
@@ -25,6 +24,7 @@ namespace TelegramSellerBot.TelegramBot.CallbackQueries
         public async Task<Message> Process(CallbackQuery callbackQuery)
         {
             Guid subscriptionId = Guid.Parse(callbackQuery.Data!.Split("_")[1].Split("=")[1]);
+            await _subscriptionService.DeclineAsync(subscriptionId);
             SubscriptionDto subscription = await _subscriptionService.GetAsync(subscriptionId);
 
             string message = string.Format(

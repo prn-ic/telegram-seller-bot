@@ -27,7 +27,7 @@ namespace TelegramSellerBot.TelegramBot.CallbackQueries
 
         public async Task<Message> Process(CallbackQuery callbackQuery)
         {
-            Guid botId = Guid.Parse(callbackQuery.Data.Split("_")[1]);
+            Guid botId = Guid.Parse(callbackQuery.Data!.Split("_")[1]);
             var bot = await _telegramBotService.GetAsync(botId);
             string serviceInfo = string.Format(
                 """
@@ -51,7 +51,7 @@ namespace TelegramSellerBot.TelegramBot.CallbackQueries
             else
                 inlineMarkup.AddButton(
                     "Оформить подписку",
-                    typeof(SubscribeQuery).Name + "_sId=" + bot.Id
+                    typeof(SubscribeQuery).Name + "_sId=" + bot.Id + "_add"
                 );
 
             inlineMarkup.GenerateGoBackButton(typeof(GetRangeQuery), "skip=0_take=5");
