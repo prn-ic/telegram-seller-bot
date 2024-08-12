@@ -15,7 +15,7 @@ namespace TelegramSellerBot.Core.Entities
         public SubscriptionStatuses StatusId { get; set; }
 
         public TelegramServiceDurations DurationId { get; set; }
-
+        public Subscription() { }
         public Subscription(string? telegramUserId, TelegramBot service, TelegramServiceDurations durationId)
         {
             ExceptionExtension.ThrowIfStringRangeIsInvalid(telegramUserId, 1);

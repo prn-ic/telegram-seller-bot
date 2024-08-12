@@ -42,14 +42,14 @@ namespace TelegramSellerBot.Persistense.Repositories
             await _context.SaveChangesAsync(cancellationToken);
         }
 
-        public async Task<T?> GetAsync(TId id, CancellationToken cancellationToken = default)
+        public virtual async Task<T?> GetAsync(TId id, CancellationToken cancellationToken = default)
         {
             return await _context
                 .Set<T>()
-                .FirstOrDefaultAsync(x => x.Id.Equals(id), cancellationToken);;
+                .FirstOrDefaultAsync(x => x.Id.Equals(id), cancellationToken);
         }
 
-        public async Task<IEnumerable<T>> GetAsync(CancellationToken cancellationToken = default)
+        public virtual async Task<IEnumerable<T>> GetAsync(CancellationToken cancellationToken = default)
         {
             return await _context.Set<T>().ToListAsync(cancellationToken);
         }

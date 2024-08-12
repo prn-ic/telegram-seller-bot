@@ -24,7 +24,7 @@ namespace TelegramSellerBot.Core.UnitTests
             Guid serviceId = service.Id;
             
             // Act
-            TelegramBotDurationAvailability actual = new(duration, service, cost, durationId, serviceId);
+            TelegramBotDurationAvailability actual = new(duration, service, cost, durationId);
             
             // Assert
             Assert.True(true);
@@ -48,7 +48,7 @@ namespace TelegramSellerBot.Core.UnitTests
             TelegramServiceDurations durationId = TelegramServiceDurations.Year;
             Guid serviceId = service.Id;
             decimal cost = 10;
-            TelegramBotDurationAvailability availability = new(duration, service, cost, durationId, serviceId);
+            TelegramBotDurationAvailability availability = new(duration, service, cost, durationId);
             
             // Act
             availability.SetCost(value);

@@ -9,7 +9,7 @@ namespace TelegramSellerBot.Core.Entities
         public string TelegramBotLink { get; private set; }
         public ICollection<TelegramBotDurationAvailability> Availabilities { get; private set; } =
             new List<TelegramBotDurationAvailability>();
-
+        public TelegramBot() { }
         public TelegramBot(string name, string description, string telegramBotLink)
         {
             ExceptionExtension.ThrowIfStringRangeIsInvalid(name, 3, 100);

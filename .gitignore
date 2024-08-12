@@ -202,3 +202,5 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+src/TelegramSellerBot.TelegramBot/appsettings.json
+src/TelegramSellerBot.TelegramBot/appsettings.json

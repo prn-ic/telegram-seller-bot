@@ -14,7 +14,7 @@ namespace TelegramSellerBot.Persistense.Configurations
             builder.Property(ss => ss.Id).HasConversion<int>();
 
             builder.HasData(
-                Enum.GetValues(typeof(SubscriptionStatus))
+                Enum.GetValues(typeof(SubscriptionStatuses))
                     .Cast<SubscriptionStatuses>()
                     .Select(ss => new SubscriptionStatus()
                     {

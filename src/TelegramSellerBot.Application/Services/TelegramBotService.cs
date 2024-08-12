@@ -57,11 +57,13 @@ namespace TelegramSellerBot.Application.Services
         }
 
         public async Task<IEnumerable<TelegramBotDto>> GetAsync(
+            int skip = 0,
+            int take = int.MaxValue,
             CancellationToken cancellationToken = default
         )
         {
             var result = await _telegramBotRepository.GetAsync(cancellationToken);
-            return _mapper.Map<IEnumerable<TelegramBotDto>>(result);
+            return _mapper.Map<IEnumerable<TelegramBotDto>>(result.Skip(skip).Take(take));
         }
     }
 }

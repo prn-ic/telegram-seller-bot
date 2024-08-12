@@ -10,6 +10,10 @@ namespace TelegramSellerBot.Core.Contracts
             CancellationToken cancellationToken = default
         );
         Task DeleteAsync(Guid id, CancellationToken cancellationToken = default);
-        Task<IEnumerable<TelegramBotDto>> GetAsync(CancellationToken cancellationToken = default);
+        Task<IEnumerable<TelegramBotDto>> GetAsync(
+            int skip = 0,
+            int take = int.MaxValue,
+            CancellationToken cancellationToken = default
+        );
     }
 }

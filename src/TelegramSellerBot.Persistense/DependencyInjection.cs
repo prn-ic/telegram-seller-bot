@@ -6,9 +6,9 @@ using TelegramSellerBot.Core.Repositories;
 using TelegramSellerBot.Persistense.Data;
 using TelegramSellerBot.Persistense.Repositories;
 
-namespace TelegramSellerBot.Persistense
+namespace Microsoft.Extensions.DependencyInjection
 {
-    public static class DependencyInjection
+    public static partial class DependencyInjection
     {
         public static IServiceCollection AddNpgsqlPersistense(
             this IServiceCollection services,
@@ -27,7 +27,7 @@ namespace TelegramSellerBot.Persistense
 
             services.AddScoped<ISubscriptionHistoryRepository, SubscriptionHistoryRepository>();
             services.AddScoped<ISubscriptionRepository, SubscriptionRepository>();
-            services.AddScoped<ITelegramBotDurationAvailablilityRepository, TelegramBotDurationAvailabilityRepository>();
+            services.AddScoped<ITelegramBotDurationAvailabilityRepository, TelegramBotDurationAvailabilityRepository>();
             services.AddScoped<ITelegramBotRepository, TelegramBotRepository>();
 
             return services;

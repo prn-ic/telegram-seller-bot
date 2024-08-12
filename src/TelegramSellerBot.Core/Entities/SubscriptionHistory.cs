@@ -7,11 +7,12 @@ namespace TelegramSellerBot.Core.Entities
     {
         public Subscription? Subscription { get; set; }
         public DateTime CreatedAt { get; set; }
-        public TelegramBot? Service { get; set; }
+        public TelegramBot? TelegramBot { get; set; }
         public SubscriptionStatus? Status { get; set; }
         public decimal Cost { get; private set; }
         public SubscriptionStatuses StatusId { get; set; }
 
+        public SubscriptionHistory() { }
         public SubscriptionHistory(
             Subscription subscription,
             TelegramBot service,
@@ -23,8 +24,23 @@ namespace TelegramSellerBot.Core.Entities
         {
             Subscription = subscription;
             CreatedAt = createdAt is null ? DateTime.UtcNow : (DateTime)createdAt;
-            Service = service;
+            TelegramBot = service;
             Status = status;
+            ExceptionExtension.ThrowIfLessThanZero(cost);
+            Cost = cost;
+            StatusId = statusId;
+        }
+        public SubscriptionHistory(
+            Subscription subscription,
+            TelegramBot service,
+            decimal cost,
+            SubscriptionStatuses statusId,
+            DateTime? createdAt
+        )
+        {
+            Subscription = subscription;
+            CreatedAt = createdAt is null ? DateTime.UtcNow : (DateTime)createdAt;
+            TelegramBot = service;
             ExceptionExtension.ThrowIfLessThanZero(cost);
             Cost = cost;
             StatusId = statusId;

@@ -5,7 +5,8 @@ using TelegramSellerBot.Persistense.Data;
 
 namespace TelegramSellerBot.Persistense.Configurations
 {
-    public class TelegramBotDurationAvailabilityConfiguration : BaseEntityConfiguration<TelegramBotDurationAvailability, int>
+    public class TelegramBotDurationAvailabilityConfiguration
+        : BaseEntityConfiguration<TelegramBotDurationAvailability, int>
     {
         public override void Configure(EntityTypeBuilder<TelegramBotDurationAvailability> builder)
         {
@@ -13,7 +14,10 @@ namespace TelegramSellerBot.Persistense.Configurations
             builder.Property(t => t.Cost).IsRequired();
 
             builder.HasOne(t => t.Duration).WithMany().OnDelete(DeleteBehavior.Cascade);
-            builder.HasOne(t => t.Service).WithMany().OnDelete(DeleteBehavior.Cascade);
+            builder
+                .HasOne(t => t.TelegramBot)
+                .WithMany(x => x.Availabilities)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

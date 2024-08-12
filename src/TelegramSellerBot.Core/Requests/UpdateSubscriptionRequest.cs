@@ -10,5 +10,6 @@ namespace TelegramSellerBot.Core.Requests
         public Guid SubscriptionId { get; set; }
         [Required(ErrorMessageResourceType = typeof(InvalidRequestException))]
         public TelegramServiceDurations Duration { get; set; }
+        public SubscriptionStatuses Status { get; set; } = SubscriptionStatuses.Active;
     }
 }

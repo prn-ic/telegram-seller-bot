@@ -1,6 +1,6 @@
 namespace TelegramSellerBot.Core.Exceptions
 {
-    public class SubscriptionExistsException : Exception
+    public class SubscriptionExistsException : DomainException
     {
         public SubscriptionExistsException()
             : base("Subscription already exists") { }

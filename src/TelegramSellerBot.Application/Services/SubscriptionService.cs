@@ -13,17 +13,24 @@ namespace TelegramSellerBot.Application.Services
     {
         private readonly ISubscriptionRepository _subscriptionRepository;
         private readonly ITelegramBotRepository _telegramBotRepository;
+        private readonly ITelegramBotDurationAvailabilityRepository _availabilityRepository;
+        private readonly ISubscriptionHistoryRepository _subscriptionHistoryRepository;
+
         private readonly IMapper _mapper;
 
         public SubscriptionService(
             ISubscriptionRepository subscriptionRepository,
             ITelegramBotRepository telegramBotRepository,
-            IMapper mapper
-        )
+            IMapper mapper,
+            ITelegramBotDurationAvailabilityRepository availabilityRepository
+,
+            ISubscriptionHistoryRepository subscriptionHistoryRepository)
         {
             _subscriptionRepository = subscriptionRepository;
             _telegramBotRepository = telegramBotRepository;
             _mapper = mapper;
+            _availabilityRepository = availabilityRepository;
+            _subscriptionHistoryRepository = subscriptionHistoryRepository;
         }
 
         public async Task<SubscriptionDto> CreateAsync(
@@ -37,6 +44,23 @@ namespace TelegramSellerBot.Application.Services
 
             Subscription subscription = new(request.TelegramUserId, telegramBot, request.Duration);
             var result = await _subscriptionRepository.AddAsync(subscription, cancellationToken);
+
+            TelegramBotDurationAvailability availability =
+                await _availabilityRepository.GetAsync(
+                    telegramBot.Id,
+                    (int)request.Duration,
+                    cancellationToken
+                ) ?? throw new InvalidRequestException("The availability wasn't found");
+
+            SubscriptionHistory history = new SubscriptionHistory(
+                subscription,
+                telegramBot,
+                availability.Cost,
+                result.StatusId,
+                DateTime.UtcNow
+            );
+
+            await _subscriptionHistoryRepository.AddAsync(history, cancellationToken);
 
             return _mapper.Map<SubscriptionDto>(result);
         }
@@ -88,6 +112,7 @@ namespace TelegramSellerBot.Application.Services
 
             subscription.DurationId = request.Duration;
             subscription.ModifiedAt = DateTime.UtcNow;
+            subscription.StatusId = request.Status;
             var result = await _subscriptionRepository.UpdateAsync(subscription, cancellationToken);
 
             return _mapper.Map<SubscriptionDto>(result);

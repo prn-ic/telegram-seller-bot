@@ -14,7 +14,7 @@ namespace TelegramSellerBot.Persistense.Configurations
 
             builder.HasOne(x => x.Subscription).WithMany().OnDelete(DeleteBehavior.Cascade);
             builder.HasOne(x => x.Status).WithMany().OnDelete(DeleteBehavior.Cascade);
-            builder.HasOne(x => x.Service).WithMany().OnDelete(DeleteBehavior.Cascade);
+            builder.HasOne(x => x.TelegramBot).WithMany().OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

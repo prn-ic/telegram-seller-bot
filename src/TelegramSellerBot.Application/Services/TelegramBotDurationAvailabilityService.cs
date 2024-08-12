@@ -11,19 +11,22 @@ namespace TelegramSellerBot.Application.Services
 {
     public class TelegramBotDurationAvailabilityService : ITelegramBotDurationAvailabilityService
     {
-        private readonly TelegramBotDurationAvailabilityRepository _telegramDurationAvailabilityService;
+        private readonly ITelegramBotDurationAvailabilityRepository _telegramDurationAvailabilityRepository;
         private readonly ITelegramBotRepository _telegramBotRepository;
+        private readonly ITelegramBotDurationAvailabilityRepository _availabilityRepository;
         private readonly IMapper _mapper;
 
         public TelegramBotDurationAvailabilityService(
-            TelegramBotDurationAvailabilityRepository telegramDurationAvailabilityService,
+            ITelegramBotDurationAvailabilityRepository telegramDurationAvailabilityRepository,
             ITelegramBotRepository telegramBotRepository,
             IMapper mapper
-        )
+,
+            ITelegramBotDurationAvailabilityRepository availabilityRepository)
         {
-            _telegramDurationAvailabilityService = telegramDurationAvailabilityService;
+            _telegramDurationAvailabilityRepository = telegramDurationAvailabilityRepository;
             _telegramBotRepository = telegramBotRepository;
             _mapper = mapper;
+            _availabilityRepository = availabilityRepository;
         }
 
         public async Task<TelegramBotDurationAvailabilityDto> AddAsync(
@@ -36,8 +39,8 @@ namespace TelegramSellerBot.Application.Services
                 ?? throw new InvalidRequestException("The service wasn't found");
 
             TelegramBotDurationAvailability telegramBotDuration =
-                new(service.Id, request.Duration, request.Cost);
-            var result = await _telegramDurationAvailabilityService.AddAsync(
+                new(service, request.Duration, request.Cost);
+            var result = await _telegramDurationAvailabilityRepository.AddAsync(
                 telegramBotDuration,
                 cancellationToken
             );
@@ -45,9 +48,44 @@ namespace TelegramSellerBot.Application.Services
             return _mapper.Map<TelegramBotDurationAvailabilityDto>(result);
         }
 
+        public async Task<IEnumerable<TelegramBotDurationAvailabilityDto>> GetAsync(
+            Guid serviceId,
+            CancellationToken cancellationToken = default
+        )
+        {
+            var result = (
+                await _telegramDurationAvailabilityRepository.GetAsync(cancellationToken)
+            ).Where(x => x.TelegramBot!.Id == serviceId);
+            return _mapper.Map<IEnumerable<TelegramBotDurationAvailabilityDto>>(result);
+        }
+
+        public async Task<TelegramBotDurationAvailabilityDto> GetAsync(
+            int id,
+            CancellationToken cancellationToken = default
+        )
+        {
+            var result = await _telegramDurationAvailabilityRepository.GetAsync(
+                id,
+                cancellationToken
+            );
+            return _mapper.Map<TelegramBotDurationAvailabilityDto>(result);
+        }
+
+        public async Task<TelegramBotDurationAvailabilityDto> GetAsync(Guid serviceId, int durationId, CancellationToken cancellationToken = default)
+        {
+            TelegramBotDurationAvailability availability =
+                await  _availabilityRepository.GetAsync(
+                    serviceId,
+                    durationId,
+                    cancellationToken
+                ) ?? throw new InvalidRequestException("The availability wasn't found");
+
+            return _mapper.Map<TelegramBotDurationAvailabilityDto>(availability);
+        }
+
         public async Task RemoveAsync(int id, CancellationToken cancellationToken = default)
         {
-            await _telegramDurationAvailabilityService.DeleteAsync(id, cancellationToken);
+            await _telegramDurationAvailabilityRepository.DeleteAsync(id, cancellationToken);
         }
     }
 }

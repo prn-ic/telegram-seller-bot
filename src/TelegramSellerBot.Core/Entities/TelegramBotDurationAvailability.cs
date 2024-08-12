@@ -6,21 +6,20 @@ namespace TelegramSellerBot.Core.Entities
     public class TelegramBotDurationAvailability : BaseEntity<int>
     {
         public TelegramBotDuration? Duration { get; set; }
-        public TelegramBot? Service { get; set; }
+        public TelegramBot? TelegramBot { get; set; }
         public decimal Cost { get; private set; }
 
         public TelegramServiceDurations DurationId { get; set; }
 
-        public Guid ServiceId { get; set; }
-
+        public TelegramBotDurationAvailability() { }
         public TelegramBotDurationAvailability(
-            Guid serviceId,
+            TelegramBot service,
             TelegramServiceDurations durationId,
             decimal cost
         )
         {
+            TelegramBot = service;
             DurationId = durationId;
-            ServiceId = serviceId;
             Cost = cost;
         }
 
@@ -28,16 +27,14 @@ namespace TelegramSellerBot.Core.Entities
             TelegramBotDuration? duration,
             TelegramBot? service,
             decimal cost,
-            TelegramServiceDurations durationId,
-            Guid serviceId
+            TelegramServiceDurations durationId
         )
         {
             Duration = duration;
-            Service = service;
+            TelegramBot = service;
             ExceptionExtension.ThrowIfLessThanZero(cost);
             Cost = cost;
             DurationId = durationId;
-            ServiceId = serviceId;
         }
 
         public void SetCost(decimal cost)
