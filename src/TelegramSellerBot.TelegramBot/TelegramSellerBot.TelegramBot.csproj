@@ -5,6 +5,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>dotnet-TelegramSellerBot.TelegramBot-95ea80e9-7ec7-4a7f-a2d9-89808d69c2b5</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,6 +17,7 @@
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.0-preview.6.24327.7" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
     <PackageReference Include="Telegram.Bot" Version="21.9.0" />
   </ItemGroup>
 

@@ -1,6 +1,8 @@
+using Microsoft.EntityFrameworkCore;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 using TelegramSellerBot.Persistense;
+using TelegramSellerBot.Persistense.Data;
 using TelegramSellerBot.TelegramBot;
 using TelegramSellerBot.TelegramBot.CallbackQueries;
 using TelegramSellerBot.TelegramBot.Contracts;
@@ -41,4 +43,11 @@ builder.Services.AddNpgsqlPersistense(configuration, "TelegramSellerBot.Telegram
 builder.Services.AddApplicationLayer();
 
 var host = builder.Build();
+
+using (var scope = host.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    context.Database.Migrate();
+}
+
 host.Run();

@@ -180,11 +180,6 @@ namespace TelegramSellerBot.TelegramBot.Services
                 );
 
             await updateHandler.Process(callbackQuery);
-            await _bot.AnswerCallbackQueryAsync(callbackQuery.Id, $"Received {callbackQuery.Data}");
-            await _bot.SendTextMessageAsync(
-                callbackQuery.Message!.Chat,
-                $"Received {callbackQuery.Data}"
-            );
         }
 
         public Task HandleErrorAsync(

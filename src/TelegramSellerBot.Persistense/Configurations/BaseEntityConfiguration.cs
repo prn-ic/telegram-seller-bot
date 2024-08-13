@@ -11,6 +11,7 @@ namespace TelegramSellerBot.Persistense.Data
         public virtual void Configure(EntityTypeBuilder<T> builder)
         {
             builder.HasKey(t => t.Id);
+            builder.HasIndex(i => i.Id).IsUnique();
             builder.Property(t => t.Id).IsRequired();
         }
     }

@@ -22,6 +22,7 @@ namespace TelegramSellerBot.Core.Entities
             DateTime? createdAt
         )
         {
+            Id = Guid.NewGuid();
             Subscription = subscription;
             CreatedAt = createdAt is null ? DateTime.UtcNow : (DateTime)createdAt;
             TelegramBot = service;

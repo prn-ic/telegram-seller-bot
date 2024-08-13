@@ -60,6 +60,10 @@ namespace TelegramSellerBot.TelegramBot.Migrations
                     b.HasIndex("DurationId")
                         .HasDatabaseName("ix_subscriptions_duration_id");
 
+                    b.HasIndex("Id")
+                        .IsUnique()
+                        .HasDatabaseName("ix_subscriptions_id");
+
                     b.HasIndex("ServiceId")
                         .HasDatabaseName("ix_subscriptions_service_id");
 
@@ -99,6 +103,10 @@ namespace TelegramSellerBot.TelegramBot.Migrations
                     b.HasKey("Id")
                         .HasName("pk_subscription_histories");
 
+                    b.HasIndex("Id")
+                        .IsUnique()
+                        .HasDatabaseName("ix_subscription_histories_id");
+
                     b.HasIndex("StatusId")
                         .HasDatabaseName("ix_subscription_histories_status_id");
 
@@ -123,6 +131,10 @@ namespace TelegramSellerBot.TelegramBot.Migrations
 
                     b.HasKey("Id")
                         .HasName("pk_subscription_statuses");
+
+                    b.HasIndex("Id")
+                        .IsUnique()
+                        .HasDatabaseName("ix_subscription_statuses_id");
 
                     b.ToTable("subscription_statuses", (string)null);
 
@@ -171,7 +183,69 @@ namespace TelegramSellerBot.TelegramBot.Migrations
                     b.HasKey("Id")
                         .HasName("pk_telegram_bots");
 
+                    b.HasIndex("Id")
+                        .IsUnique()
+                        .HasDatabaseName("ix_telegram_bots_id");
+
                     b.ToTable("telegram_bots", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("1d6154e8-f1e5-435a-93e2-244a0e27d0ad"),
+                            Description = "some description, none more",
+                            Name = "Some service #1",
+                            TelegramBotLink = "https://google.com"
+                        },
+                        new
+                        {
+                            Id = new Guid("035b033a-a042-4f10-af8d-faea50fbfcf3"),
+                            Description = "some description, none more",
+                            Name = "Some service #2",
+                            TelegramBotLink = "https://google.com"
+                        },
+                        new
+                        {
+                            Id = new Guid("64c6f5e9-d535-4eca-a786-ec769b5b70b3"),
+                            Description = "some description, none more",
+                            Name = "Some service #3",
+                            TelegramBotLink = "https://google.com"
+                        },
+                        new
+                        {
+                            Id = new Guid("395b8881-01ea-4a54-aab1-6e8029afa1de"),
+                            Description = "some description, none more",
+                            Name = "Some service #4",
+                            TelegramBotLink = "https://google.com"
+                        },
+                        new
+                        {
+                            Id = new Guid("2423888f-e190-4c6f-8c32-27f5fdf3c174"),
+                            Description = "some description, none more",
+                            Name = "Some service #5",
+                            TelegramBotLink = "https://google.com"
+                        },
+                        new
+                        {
+                            Id = new Guid("8dfac16d-e70e-4add-afab-b62f82dc9263"),
+                            Description = "some description, none more",
+                            Name = "Some service #6",
+                            TelegramBotLink = "https://google.com"
+                        },
+                        new
+                        {
+                            Id = new Guid("74297ae7-11bd-4db4-81af-3a25738f16e9"),
+                            Description = "some description, none more",
+                            Name = "Some service #7",
+                            TelegramBotLink = "https://google.com"
+                        },
+                        new
+                        {
+                            Id = new Guid("afd6aa9a-9582-4af3-beb6-f04725809d46"),
+                            Description = "some description, none more",
+                            Name = "Some service #8",
+                            TelegramBotLink = "https://google.com"
+                        });
                 });
 
             modelBuilder.Entity("TelegramSellerBot.Core.Entities.TelegramBotDuration", b =>
@@ -186,6 +260,10 @@ namespace TelegramSellerBot.TelegramBot.Migrations
 
                     b.HasKey("Id")
                         .HasName("pk_telegram_bot_durations");
+
+                    b.HasIndex("Id")
+                        .IsUnique()
+                        .HasDatabaseName("ix_telegram_bot_durations_id");
 
                     b.ToTable("telegram_bot_durations", (string)null);
 
@@ -230,6 +308,7 @@ namespace TelegramSellerBot.TelegramBot.Migrations
                         .HasColumnName("id");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    NpgsqlPropertyBuilderExtensions.HasIdentityOptions(b.Property<int>("Id"), 1L, null, null, null, null, null);
 
                     b.Property<decimal>("Cost")
                         .HasColumnType("numeric")
@@ -239,7 +318,7 @@ namespace TelegramSellerBot.TelegramBot.Migrations
                         .HasColumnType("integer")
                         .HasColumnName("duration_id");
 
-                    b.Property<Guid?>("TelegramBotId")
+                    b.Property<Guid>("TelegramBotId")
                         .HasColumnType("uuid")
                         .HasColumnName("telegram_bot_id");
 
@@ -253,6 +332,176 @@ namespace TelegramSellerBot.TelegramBot.Migrations
                         .HasDatabaseName("ix_telegram_bot_duration_availabilities_telegram_bot_id");
 
                     b.ToTable("telegram_bot_duration_availabilities", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Cost = 100m,
+                            DurationId = 168,
+                            TelegramBotId = new Guid("1d6154e8-f1e5-435a-93e2-244a0e27d0ad")
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Cost = 200m,
+                            DurationId = 4464,
+                            TelegramBotId = new Guid("1d6154e8-f1e5-435a-93e2-244a0e27d0ad")
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Cost = 3100m,
+                            DurationId = 8760,
+                            TelegramBotId = new Guid("1d6154e8-f1e5-435a-93e2-244a0e27d0ad")
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Cost = 100m,
+                            DurationId = 168,
+                            TelegramBotId = new Guid("035b033a-a042-4f10-af8d-faea50fbfcf3")
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Cost = 200m,
+                            DurationId = 4464,
+                            TelegramBotId = new Guid("035b033a-a042-4f10-af8d-faea50fbfcf3")
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Cost = 3100m,
+                            DurationId = 8760,
+                            TelegramBotId = new Guid("035b033a-a042-4f10-af8d-faea50fbfcf3")
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Cost = 100m,
+                            DurationId = 168,
+                            TelegramBotId = new Guid("64c6f5e9-d535-4eca-a786-ec769b5b70b3")
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Cost = 200m,
+                            DurationId = 4464,
+                            TelegramBotId = new Guid("64c6f5e9-d535-4eca-a786-ec769b5b70b3")
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Cost = 3100m,
+                            DurationId = 8760,
+                            TelegramBotId = new Guid("64c6f5e9-d535-4eca-a786-ec769b5b70b3")
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Cost = 100m,
+                            DurationId = 168,
+                            TelegramBotId = new Guid("395b8881-01ea-4a54-aab1-6e8029afa1de")
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Cost = 200m,
+                            DurationId = 4464,
+                            TelegramBotId = new Guid("395b8881-01ea-4a54-aab1-6e8029afa1de")
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Cost = 3100m,
+                            DurationId = 8760,
+                            TelegramBotId = new Guid("395b8881-01ea-4a54-aab1-6e8029afa1de")
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Cost = 100m,
+                            DurationId = 168,
+                            TelegramBotId = new Guid("2423888f-e190-4c6f-8c32-27f5fdf3c174")
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Cost = 200m,
+                            DurationId = 4464,
+                            TelegramBotId = new Guid("2423888f-e190-4c6f-8c32-27f5fdf3c174")
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Cost = 3100m,
+                            DurationId = 8760,
+                            TelegramBotId = new Guid("2423888f-e190-4c6f-8c32-27f5fdf3c174")
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Cost = 100m,
+                            DurationId = 168,
+                            TelegramBotId = new Guid("8dfac16d-e70e-4add-afab-b62f82dc9263")
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Cost = 200m,
+                            DurationId = 4464,
+                            TelegramBotId = new Guid("8dfac16d-e70e-4add-afab-b62f82dc9263")
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Cost = 3100m,
+                            DurationId = 8760,
+                            TelegramBotId = new Guid("8dfac16d-e70e-4add-afab-b62f82dc9263")
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Cost = 100m,
+                            DurationId = 168,
+                            TelegramBotId = new Guid("74297ae7-11bd-4db4-81af-3a25738f16e9")
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Cost = 200m,
+                            DurationId = 4464,
+                            TelegramBotId = new Guid("74297ae7-11bd-4db4-81af-3a25738f16e9")
+                        },
+                        new
+                        {
+                            Id = 21,
+                            Cost = 3100m,
+                            DurationId = 8760,
+                            TelegramBotId = new Guid("74297ae7-11bd-4db4-81af-3a25738f16e9")
+                        },
+                        new
+                        {
+                            Id = 22,
+                            Cost = 100m,
+                            DurationId = 168,
+                            TelegramBotId = new Guid("afd6aa9a-9582-4af3-beb6-f04725809d46")
+                        },
+                        new
+                        {
+                            Id = 23,
+                            Cost = 200m,
+                            DurationId = 4464,
+                            TelegramBotId = new Guid("afd6aa9a-9582-4af3-beb6-f04725809d46")
+                        },
+                        new
+                        {
+                            Id = 24,
+                            Cost = 3100m,
+                            DurationId = 8760,
+                            TelegramBotId = new Guid("afd6aa9a-9582-4af3-beb6-f04725809d46")
+                        });
                 });
 
             modelBuilder.Entity("TelegramSellerBot.Core.Entities.Subscription", b =>
@@ -325,6 +574,7 @@ namespace TelegramSellerBot.TelegramBot.Migrations
                         .WithMany("Availabilities")
                         .HasForeignKey("TelegramBotId")
                         .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
                         .HasConstraintName("fk_telegram_bot_duration_availabilities_telegram_bots_telegram");
 
                     b.Navigation("Duration");

@@ -27,7 +27,7 @@ namespace TelegramSellerBot.TelegramBot.CallbackQueries
             const string lk = "Личный кабинет";
 
             var subscriptions = await _subscriptionService.GetAsync(
-                callbackQuery.Message!.From!.Id.ToString()
+                callbackQuery.From!.Id.ToString()
             );
             InlineKeyboardMarkup markup = new InlineKeyboardMarkup().GenerateMySubscriptionsMenu(
                 subscriptions,
@@ -35,7 +35,7 @@ namespace TelegramSellerBot.TelegramBot.CallbackQueries
             );
 
             return await _bot.SendTextMessageAsync(
-                callbackQuery.Message.Chat,
+                callbackQuery.Message!.Chat,
                 lk,
                 parseMode: ParseMode.Html,
                 replyMarkup: markup

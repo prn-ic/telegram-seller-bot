@@ -1,6 +1,7 @@
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using TelegramSellerBot.Core.Entities;
+using TelegramSellerBot.Persistense.Seeds;
 
 namespace TelegramSellerBot.Persistense.Data
 {
@@ -25,6 +26,17 @@ namespace TelegramSellerBot.Persistense.Data
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+            var telegramBots = TelegramBotSeedGenerator.GenerateSimpleBots();
+            var telegramBotAvailabilities =
+                TelegramBotDurationAvailabilityGenerator.GenerateDurationsByExistedBots(
+                    telegramBots
+                );
+
+            modelBuilder.Entity<TelegramBot>().HasData(telegramBots);
+            modelBuilder
+                .Entity<TelegramBotDurationAvailability>()
+                .HasData(telegramBotAvailabilities);
         }
     }
 }

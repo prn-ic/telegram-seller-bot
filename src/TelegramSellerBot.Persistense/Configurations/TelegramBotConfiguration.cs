@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using TelegramSellerBot.Core.Entities;
 using TelegramSellerBot.Persistense.Data;
+using TelegramSellerBot.Persistense.Seeds;
 
 namespace TelegramSellerBot.Persistense.Configurations
 {

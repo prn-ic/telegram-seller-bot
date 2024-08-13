@@ -1,4 +1,6 @@
 # Created by http://www.gitignore.io
+/.vs
+/.vscode
 
 ### VisualStudio ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -204,3 +206,5 @@ $RECYCLE.BIN/
 *.msp
 src/TelegramSellerBot.TelegramBot/appsettings.json
 src/TelegramSellerBot.TelegramBot/appsettings.json
+deploy/environments/secrets.env
+deploy/environments/postgres.env

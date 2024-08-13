@@ -38,6 +38,7 @@ namespace TelegramSellerBot.Core.Entities
             TelegramServiceDurations durationId
         )
         {
+            Id = Guid.NewGuid();
             ExceptionExtension.ThrowIfStringRangeIsInvalid(telegramUserId, 1);
             TelegramUserId = telegramUserId;
             CreatedAt = createdAt;

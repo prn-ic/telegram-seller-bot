@@ -12,6 +12,7 @@ namespace TelegramSellerBot.Core.Entities
         public TelegramBot() { }
         public TelegramBot(string name, string description, string telegramBotLink)
         {
+            Id = Guid.NewGuid();
             ExceptionExtension.ThrowIfStringRangeIsInvalid(name, 3, 100);
             Name = name;
             ExceptionExtension.ThrowIfStringRangeIsInvalid(description, 3, 300);
