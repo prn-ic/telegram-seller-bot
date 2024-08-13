@@ -1,0 +1,33 @@
+services:
+  psql:
+      build:
+        context: .
+        dockerfile: ../Postgres.Dockerfile
+      hostname: psql
+      restart: always
+      container_name: postgres
+      env_file:
+        - ../../environments/postgres.env
+      ports:
+        - "5432:5432"
+      volumes:
+        - postgresdb:/var/lib/postgresql/data
+      stdin_open: true
+      tty: true
+      command: postgres -c 'max_connections=20'
+
+  tg-seller-bot:
+    image: tgsellerbot
+    hostname: tg-seller-bot
+    container_name: tg-seller-bot
+    restart: always
+    env_file:
+      - ../../environments/secrets.env
+    build:
+      context: ../../../
+      dockerfile: src/TelegramSellerBot.TelegramBot/Dockerfile
+    ports:
+      - "5001:8080"
+
+volumes:
+  postgresdb:
